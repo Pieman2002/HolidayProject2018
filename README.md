@@ -1,2 +1,4 @@
 # HolidayProject2018
-This project takes a website, searches it for a word, then sends you a text if it finds the word in the page a given number of times at a given interval
+Search a website for a given word over time, or search for changes in general over time.
+
+#You need to create a file named "variables.py" that contains your Twilio account SID (named "account_sid"), your authentication token (named"auth_token"), and your Twilio phone numer (named "twilio_phone_number").
