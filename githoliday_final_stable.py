@@ -68,7 +68,6 @@ def look_for_word():
 #send a message if the content of a page has changed since the script ran
 def look_for_changes():
     #get original page content
-    global client, page, soup, newtext, web_text 
     client = Client(account_sid, auth_token)
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
@@ -113,7 +112,6 @@ def look_for_changes():
             #if no changes were made, it shouldn't matter, and if they were, it also doesn't matter
             #this doesn't seem to be working
             #the function still bases changes on the first original content
-            global client, page, soup, newtext, web_text
             client = Client(account_sid, auth_token)
             page = requests.get(url)
             soup = BeautifulSoup(page.content, 'html.parser')
@@ -131,3 +129,4 @@ if(op_type == 'w' or op_type == 'W'):
     look_for_word()
 elif(op_type == 'c' or op_type == 'C'):
     look_for_changes()
+    
