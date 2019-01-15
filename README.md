@@ -7,3 +7,5 @@ githoliday_ultraminimal.py is the optimal, reduced, refactored code (that only c
 githoliday_final_stable.py has more functions but is larger and worse.
 
 The ultraminimal version of this code is my primary code, the best version, and the most efficient. It scrapes a website on an interval and texts you with Twilio if the site has changed. 
+
+index.html (a GitHub pages site) is merely for testing. It contains the assignment instructions for this project.
